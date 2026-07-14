@@ -1,0 +1,6 @@
+framework module UBiddingAdSDK {
+  umbrella header "UBiddingAdSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
