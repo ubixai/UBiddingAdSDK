@@ -49,8 +49,6 @@ typedef NS_ENUM(NSInteger, UMTAdShowStatus) {
 
 - (int64_t)getSignedEcpm;
 
-- (NSString *)getAdNetworkName DEPRECATED_MSG_ATTRIBUTE("接口即将废弃，请使用winnerAdnInfo新接口");
-
 /// 竞胜：媒体向 SaaS 回传竞价成功结果（info 用 UMTBidResultKey* 作 key，竞胜至少给 SecondPrice）
 - (void)sendBiddingWinWithInfo:(NSDictionary *)info;
 

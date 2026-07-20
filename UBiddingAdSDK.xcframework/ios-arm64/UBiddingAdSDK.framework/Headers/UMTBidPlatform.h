@@ -2,7 +2,7 @@
 //  UMTBidPlatform.h
 //  UMTAdSDK
 //
-//  竞价回传：竞胜方平台 id（公开枚举，值与内部 UMT_Adn_Platform_Type 对齐）。
+//  竞价回传：竞胜方平台 id
 //
 
 #import <Foundation/Foundation.h>
