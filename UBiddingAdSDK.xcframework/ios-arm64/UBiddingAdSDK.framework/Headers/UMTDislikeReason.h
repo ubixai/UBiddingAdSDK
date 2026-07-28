@@ -10,7 +10,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UMTDislikeReason : UMTInterfaceBaseObject
-//- (instancetype)initWithID:(NSString *)ID name:(NSString *)name subReasons:(NSArray<BUMDislikeReason *> *)reasons;
 
 @property (nonatomic, copy, readonly) NSString *ID;
 

@@ -7,12 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-// UMTBidLossType 定义在伞头 import 之前：外部头依赖本枚举，而伞头会回头 import 这些头，
-// 若枚举放在伞头 import 之后会成环 —— 其它头的 @interface 在本枚举就绪前被编译，报 unknown type。
-// 枚举原始值与安卓 BidLossReasons / proto loss_reason 口径对齐（1-6 同号）：媒体在
-// didReceiveBidResult 收到的 result.lossType 即此口径，与埋点 ubidding_bid_loss_reason 一致。
-// ⚠️ 无 0 值：adn.lossReason 默认 Other(6) 由 loadAdnAdWith 显式重置（UMTAdReqBaseService.m），
-// 不再依赖零值初始化——改这里务必同步赋默认值的地方。
 typedef enum : NSUInteger {
     /// 底价过滤
     UMTBidLossTypePriceFilter = 1,

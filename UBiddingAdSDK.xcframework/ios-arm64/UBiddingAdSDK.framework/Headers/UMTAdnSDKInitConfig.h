@@ -10,8 +10,6 @@
 NS_ASSUME_NONNULL_BEGIN
 /// adn初始化配置信息
 @interface UMTAdnSDKInitConfig : UMTInterfaceBaseObject
-/// 用户自定义配置
-//@property (nonatomic, strong, readonly) UMTUserConfig *userConfig;
 /// 自定义拓展参数
 @property (nonatomic, strong, readonly) NSString *customExtParamsStr;
 
