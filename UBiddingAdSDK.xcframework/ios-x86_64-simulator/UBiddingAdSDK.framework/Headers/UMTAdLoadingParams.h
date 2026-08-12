@@ -61,6 +61,21 @@ extern NSString *const UMTAdLoadingParamBannerParentView;
 /// 期望广告尺寸，NSValue/CGSize
 extern NSString *const UMTAdLoadingParamExpectSize;
 
+/// 摇一摇开关（信息流自渲染），NSNumber/BOOL：@(YES) 开启、@(NO)/缺省 关闭。
+/// adapter 需与全局传感器隐私开关(forbidSensor)取与后再生效。
+extern NSString *const UMTAdLoadingParamShakeEnabled;
+
+/// 摇一摇提示视图宽（信息流自渲染），NSNumber/CGFloat，单位 pt。
+/// 默认 100，字段缺失/非法/≤0 时回退 100。
+extern NSString *const UMTAdLoadingParamShakeViewWidth;
+
+/// 摇一摇提示视图高（信息流自渲染），NSNumber/CGFloat，单位 pt。
+/// 默认 100，字段缺失/非法/≤0 时回退 100。
+extern NSString *const UMTAdLoadingParamShakeViewHeight;
+
+/// 开发者是否自行渲染摇一摇提示（信息流自渲染），NSNumber/BOOL
+extern NSString *const UMTAdLoadingParamDeveloperRenderShakeView;
+
 #pragma mark - 加载回调参数，即adapter开发者通过`- ***Ad:didLoadWithExt/Fail*** ext:`中NSDictionary回调的数据
 
 /// 【可选】Adn 广告ECPM，NSString，单位分

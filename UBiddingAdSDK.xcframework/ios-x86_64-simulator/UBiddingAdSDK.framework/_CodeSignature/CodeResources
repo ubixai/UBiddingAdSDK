@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/UMTAdLoadingParams.h</key>
 		<data>
-		/8/EE9YJlsRfj4K+2OAmIFhdq64=
+		Ask94QlK7lxAHj1KUI1k/lZUe4g=
 		</data>
 		<key>Headers/UMTAdManager+Banner.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/UMTAdSDKConfiguration.h</key>
 		<data>
-		qKueto+QzvGi7ZL6XBqOcEcHnLI=
+		RQUJDhb/FjxEQ1xhRrPSfRNJ+xs=
 		</data>
 		<key>Headers/UMTAdSDKManager.h</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Headers/UMTCustomNativeAdapter.h</key>
 		<data>
-		zsxsGRpsppSS+NdI4fFYyf1r3e8=
+		kZt3x0muCXL7mDR2K3daIzR+PQo=
 		</data>
 		<key>Headers/UMTCustomNativeAdapterBridge.h</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>Headers/UMTGlobalDefine.h</key>
 		<data>
-		JkMz5x/GGGTdKawVZJ6ZkmxJiwQ=
+		vdhoQqdv/51IDJCez+7a48M/Q2g=
 		</data>
 		<key>Headers/UMTImage.h</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>Headers/UMTMediationNativeAd.h</key>
 		<data>
-		7zkyDvT3u9z9X/JMokAWRb47QcU=
+		YeMINk/JlI3FCymmhQ8a3I/N02A=
 		</data>
 		<key>Headers/UMTMediationNativeAdData.h</key>
 		<data>
@@ -178,7 +178,7 @@
 		</data>
 		<key>Headers/UMTNative.h</key>
 		<data>
-		9RZgzlVn7vtbi0BQF4rt7RhV7vg=
+		Y/C/eg6BoR7/43XXsYYdtKx1Gx0=
 		</data>
 		<key>Headers/UMTNativeAdData.h</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>Headers/UMTNativeAdView.h</key>
 		<data>
-		d8kuswuZZJQ/FxGjT8yBCUVbxcc=
+		f3jsGTc9qiWxMhbPmD8nJkKRc88=
 		</data>
 		<key>Headers/UMTNativeOffer.h</key>
 		<data>
@@ -214,7 +214,7 @@
 		</data>
 		<key>Headers/UbiddingConfig.pbobjc.h</key>
 		<data>
-		3CDNXh3s5mNM421vaSaok6FU0oE=
+		DRdKbK5Gm0DxVnZBc8N2UpYDabA=
 		</data>
 		<key>Headers/UbiddingMaterial.pbobjc.h</key>
 		<data>
@@ -222,7 +222,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aya0zFBCIG+Vb843nIdx/OtpIWk=
+		kK9Q1zPKDCus2NK9493uALJZEqQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -249,7 +249,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			etstYeB39A4llop3JP0ayOrCxFaIo+sbSjpABHgh0m4=
+			e6lrRNOzIzUPz8LYLqrcC5yb9YaUUBqIWOSpo03ztbw=
 			</data>
 		</dict>
 		<key>Headers/UMTAdManager+Banner.h</key>
@@ -305,7 +305,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uNF2WrjLZpZPlGD/lkSEsH0WiFGi/YiPfz7zOoEY/mI=
+			fQso+rTFsdzGp+v0VQfc9ai7oPv0kQvh7yhlAWKsSCM=
 			</data>
 		</dict>
 		<key>Headers/UMTAdSDKManager.h</key>
@@ -417,7 +417,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			e1JJXwbIO126udMJrdNhl748cmJsY1L4d+bfWwL97gQ=
+			RTzEi6JphWo4v5YAV9iNj0nUlsNk3z1BoQw6+Abl5UU=
 			</data>
 		</dict>
 		<key>Headers/UMTCustomNativeAdapterBridge.h</key>
@@ -480,7 +480,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1jMyzLp5n5gawFOcHsLK1oMsZz4o62w9u7ivA1hic6A=
+			q/z3nNDApF8OZ5/xuRTzOblqqDz5jLK2tWEcLZXTqsk=
 			</data>
 		</dict>
 		<key>Headers/UMTImage.h</key>
@@ -515,7 +515,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SmZP7RN22TMjAxsa5n9U6BMZ7BwmK29nxoRv6pWxUNs=
+			OkshFS75xNUaub3KWa94mY1H3l0dcUBUE4Yex2j5vF4=
 			</data>
 		</dict>
 		<key>Headers/UMTMediationNativeAdData.h</key>
@@ -536,7 +536,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dQL8XuNxuNATjQ+EwPhqYKK5z5/1ICch6qxCx8QWXVs=
+			iO3qudhWViDfOoemEtleODh77SngymTNcUEJSK7xw/M=
 			</data>
 		</dict>
 		<key>Headers/UMTNativeAdData.h</key>
@@ -550,7 +550,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OoBIBqz3JQoLcOm5z0+2Vn5fzrV9FpSHjdoszZUJbFw=
+			tJSjPE5mJiNFhEUntMpguf9npZO/VAznHjQ6RU2j2uE=
 			</data>
 		</dict>
 		<key>Headers/UMTNativeOffer.h</key>
@@ -599,7 +599,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XhuJe0pMgoJTXGMz8fhl8VDDt9V5lmOz3LKHEVGGnIY=
+			3DQY9Bdr6XpqI+4KAsDCv6eGjZXFp2R80nAgPaxkWqM=
 			</data>
 		</dict>
 		<key>Headers/UbiddingMaterial.pbobjc.h</key>

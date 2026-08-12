@@ -17,6 +17,20 @@
 #import "UMTVideoConfig.h"
 
 
+#pragma mark - 信息流自渲染摇一摇
+/// 摇一摇渲染模式：由广告对象自声明，驱动四类差异化渲染策略。
+typedef NS_ENUM(NSInteger, UMTShakeRenderMode) {
+    /// 广告源自带摇一摇提示（GDT/趣盟/...），SDK 与开发者都不加
+    UMTShakeRenderModeADNAuto           = 0,
+    /// 广告源无摇一摇能力：开发者自渲染时 SDK 不兜底；开发者未声明时 SDK 挂默认视图
+    UMTShakeRenderModeDeveloperOrSDK    = 1,
+    /// 天璇：开发者自渲染时 SDK 不兜底；开发者未声明时天璇自行处理
+    UMTShakeRenderModeDeveloperOrADN    = 2,
+    /// 广告源提供独立摇一摇 widget（百度/聚推）：SDK 取视图、按 90% 等比缩放居中挂载
+    UMTShakeRenderModeSDKAttachADNView  = 3,
+};
+
+
 /// 自定义Native广告的adapter广告协议
 @protocol UMTCustomNativeAdapter <UMTCustomAdapterDelegate>
 
@@ -83,6 +97,22 @@
 
 /// 待上报的视频事件枚举类型
 - (void)reportVideoEvent:(NSInteger)event forAd:(UMTMediationNativeAd *)ad withParameters:(NSDictionary *)parameters;
+
+#pragma mark - 信息流自渲染摇一摇
+
+/// 声明该广告源在信息流自渲染摇一摇上的渲染模式。基类默认返回 UMTShakeRenderModeADNAuto。
+/// @param nativeAd 当前物料
+/// @return 渲染模式枚举
+- (UMTShakeRenderMode)feedShakeRenderModeForNativeAd:(UMTMediationNativeAd *)nativeAd;
+
+/// 取广告源提供的摇一摇提示视图（仅 SDKAttachADNView 模式，如百度）。
+/// @param widthDp  最终宽（已按容器 90% 等比缩放）
+/// @param heightDp 最终高（已按容器 90% 等比缩放）
+/// @param nativeAd 当前物料
+/// @return 广告源提供的提示视图；返回 nil 表示该广告不展示提示（如百度缩放后 < 80dp 时）
+- (nullable UIView *)renderShakeViewWithWidthDp:(CGFloat)widthDp
+                                      heightDp:(CGFloat)heightDp
+                                     nativeAd:(UMTMediationNativeAd *)nativeAd;
 
 @end
 

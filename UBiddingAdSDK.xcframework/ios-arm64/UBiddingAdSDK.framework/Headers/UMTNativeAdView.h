@@ -60,6 +60,12 @@ NS_ASSUME_NONNULL_BEGIN
 /// 非模板Native广告的物料数据，模板广告时为nil
 @property (nonatomic, strong, readonly, nullable) UMTMediationNativeAd *native;
 
+/// 此次广告的摇一摇状态——反映服务端为该代码位下发的摇一摇意图(ubiddingpbShakeStatus)。
+/// 自渲染广告取自 native.shakeStatus；模板广告恒为 UMTShakeStatusUnknown。
+/// 语义边界：只表达「该广告位的摇一摇意图」，不表示提示视图已挂载成功；
+/// 不受 developerRenderShakeView 影响（开发者声明自渲染时仍返回非 Unknown，供开发者判断要不要画自己的提示）。
+@property (nonatomic, assign, readonly) UMTShakeStatus shakeStatus;
+
 @end
 
 
