@@ -7,7 +7,6 @@
 
 #import <Foundation/Foundation.h>
 #import <UBiddingAdSDK/UMTInterfaceBaseObject.h>
-#import <CoreLocation/CoreLocation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -45,11 +44,6 @@ extern NSString *const kUMTExtraMap_StorageSpaceEnabled;
 @property (nonatomic, assign) BOOL canReadNetType;
 /**  是否允许用户读取定位信息， 默认不允许  **/
 @property (nonatomic, assign) BOOL locationEnabled;
-#if __has_include(<CoreLocation/CoreLocation.h>)
-/** 允许用户传递定位信息，如果用户传递了此值，则聚合SDK不再进行该值的获取 */
-@property (nonatomic, assign)CLLocationDegrees latitude;
-@property (nonatomic, assign)CLLocationDegrees longitude;
-#endif
 /**  是否允许用户读取idfa， 默认不允许  **/
 @property (nonatomic, assign) BOOL canReadIDFA;
 /** 用户不允许读取idfa，需传入自定义值 */
@@ -60,6 +54,12 @@ extern NSString *const kUMTExtraMap_StorageSpaceEnabled;
 @property (nonatomic, assign) BOOL debugLogEnabled;
 /**  传感器是否生效，默认打开:YES  **/
 @property (nonatomic, assign) BOOL sensorEnabled;
+
+/// 开发者是否自行渲染信息流摇一摇提示视图，默认 NO（由 SDK 托管兜底）。
+/// true 仅代表开发者声明自行渲染；SDK 信任声明，不检查布局、不兜底。
+/// 对不允许开发者替换的广告源（优量汇、聚推、趣盟、百度）不改变既定策略。
+/// 注意⚠️：加载前传入，能同时影响广告源请求参数和后续挂载。
+@property (nonatomic, assign) BOOL developerRenderShakeView;
 
 /**
   设置扩展信息

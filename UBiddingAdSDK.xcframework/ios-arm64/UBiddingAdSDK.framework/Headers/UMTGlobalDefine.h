@@ -8,13 +8,9 @@
 #ifndef UMTGlobalDefine_h
 #define UMTGlobalDefine_h
 
-/// 【可选】NSNumber，是否在adn中使用位置，如果是，adn将自己获得纬度和经度，而不是使用传入的值（  kUMTPrivacyLongitude/  kUMTPrivacyLatitude）。
+/// 【可选】NSNumber，是否允许用户读取定位信息：1-允许，0-不允许，默认不允许
 const static NSString *kUMTPrivacyCanLocation = @"kUMTPrivacyCanLocation";
-/// 【可选】NSNumber，经度的值。默认值是0.0。
-const static NSString *  kUMTPrivacyLongitude = @"kUMTPrivacyLongitude";
-/// 【可选】NSNumber，纬度的值。默认值是0.0。
-const static NSString *  kUMTPrivacyLatitude = @"kUMTPrivacyLatitude";
-/// 【可选】NSNumber，是否限制个性化广告:0-不限制，1-限制，默认为0。
+/// 【可选】NSNumber，是否限制个性化广告：0-不限制，1-限制，默认为0。
 const static NSString *kUMTPrivacyLimitPersonalAds = @"kUMTPrivacyLimitPersonalAds";
 /// 【可选】NSNumber，是否禁止IDFA：0-不禁止，1-禁止，默认为0。
 const static NSString *  kUMTPrivacyForbiddenIDFA = @"kUMTPrivacyForbiddenIDFA";

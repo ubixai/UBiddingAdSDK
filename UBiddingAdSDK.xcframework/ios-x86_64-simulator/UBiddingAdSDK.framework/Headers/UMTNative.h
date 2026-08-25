@@ -34,6 +34,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) CGSize size;
 
+/// 是否由开发者自行渲染摇一摇提示视图（默认 NO 由 SDK 托管）
+@property (nonatomic, assign) BOOL developerRenderShakeView;
+
 @end
 
 NS_ASSUME_NONNULL_END

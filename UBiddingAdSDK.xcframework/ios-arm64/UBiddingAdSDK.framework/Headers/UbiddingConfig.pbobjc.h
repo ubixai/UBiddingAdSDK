@@ -36,7 +36,6 @@ CF_EXTERN_C_BEGIN
 @class UBiddingPbRequest_UBiddingPbAppInfo;
 @class UBiddingPbRequest_UBiddingPbDeviceInfo;
 @class UBiddingPbRequest_UBiddingPbDeviceInfo_UBiddingPbDeviceId;
-@class UBiddingPbRequest_UBiddingPbDeviceInfo_UBiddingPbGeo;
 @class UBiddingPbRequest_UBiddingPbMDSlot;
 @class UBiddingPbRequest_UBiddingPbUserInfo;
 @class UBiddingPbResponse_UADXPbConfigResponse;
@@ -272,7 +271,6 @@ typedef UbiX_GPB_ENUM(UBiddingPbRequest_UBiddingPbDeviceInfo_FieldNumber) {
   UBiddingPbRequest_UBiddingPbDeviceInfo_FieldNumber_UbiddingpbDpi = 13,
   UBiddingPbRequest_UBiddingPbDeviceInfo_FieldNumber_UbiddingpbDeviceName = 14,
   UBiddingPbRequest_UBiddingPbDeviceInfo_FieldNumber_UbiddingpbOrientation = 15,
-  UBiddingPbRequest_UBiddingPbDeviceInfo_FieldNumber_UbiddingpbGeo = 16,
 };
 
 UbiX_GPB_FINAL @interface UBiddingPbRequest_UBiddingPbDeviceInfo : UbiXGPBMessage
@@ -323,28 +321,6 @@ UbiX_GPB_FINAL @interface UBiddingPbRequest_UBiddingPbDeviceInfo : UbiXGPBMessag
 
 /** 建议。设备屏幕方向。0: Unknown, 1: 竖屏, 2: 横屏 */
 @property(nonatomic, readwrite) int32_t ubiddingpbOrientation;
-
-/** 地理位置 */
-@property(nonatomic, readwrite, strong, null_resettable) UBiddingPbRequest_UBiddingPbDeviceInfo_UBiddingPbGeo *ubiddingpbGeo;
-/** Test to see if @c ubiddingpbGeo has been set. */
-@property(nonatomic, readwrite) BOOL hasUbiddingpbGeo;
-
-@end
-
-#pragma mark - UBiddingPbRequest_UBiddingPbDeviceInfo_UBiddingPbGeo
-
-typedef UbiX_GPB_ENUM(UBiddingPbRequest_UBiddingPbDeviceInfo_UBiddingPbGeo_FieldNumber) {
-  UBiddingPbRequest_UBiddingPbDeviceInfo_UBiddingPbGeo_FieldNumber_UbiddingpbLatitude = 1,
-  UBiddingPbRequest_UBiddingPbDeviceInfo_UBiddingPbGeo_FieldNumber_UbiddingpbLongitude = 2,
-};
-
-UbiX_GPB_FINAL @interface UBiddingPbRequest_UBiddingPbDeviceInfo_UBiddingPbGeo : UbiXGPBMessage
-
-/** 推荐。GPS纬度，开发者传入 */
-@property(nonatomic, readwrite) double ubiddingpbLatitude;
-
-/** 推荐。GPS经度，开发者传入 */
-@property(nonatomic, readwrite) double ubiddingpbLongitude;
 
 @end
 
@@ -1020,6 +996,7 @@ typedef UbiX_GPB_ENUM(UBiddingPbBaseAdnConfig_FieldNumber) {
   UBiddingPbBaseAdnConfig_FieldNumber_UbiddingpbCrRegArray = 19,
   UBiddingPbBaseAdnConfig_FieldNumber_UbiddingpbCrSkRegArray = 20,
   UBiddingPbBaseAdnConfig_FieldNumber_UbiddingpbDismissSetting = 21,
+  UBiddingPbBaseAdnConfig_FieldNumber_UbiddingpbShakeStatus = 22,
 };
 
 /**
@@ -1093,6 +1070,9 @@ UbiX_GPB_FINAL @interface UBiddingPbBaseAdnConfig : UbiXGPBMessage
 
 /** 点击延时dismiss_setting，仅Android开屏，1：与第一次点击间隔为2000ms延时回调开屏dismiss。 */
 @property(nonatomic, readwrite) int32_t ubiddingpbDismissSetting;
+
+/** 信息流自渲染摇一摇状态，1:开启摇一摇 2:关闭摇一摇；其他:默认值（以广告源为准） */
+@property(nonatomic, readwrite) int32_t ubiddingpbShakeStatus;
 
 @end
 
