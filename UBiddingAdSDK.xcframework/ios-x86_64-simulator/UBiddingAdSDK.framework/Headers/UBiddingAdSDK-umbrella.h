@@ -32,7 +32,6 @@
 #import "UMTMediationNativeAd.h"
 #import "UMTMediationNativeAdData.h"
 #import "UMTMediationNativeAdViewCreator.h"
-#import "UMTUAdxMRProviding.h"
 #import "UMTAd.h"
 #import "UMTAdManager.h"
 #import "UMTAdnInfo.h"
@@ -60,9 +59,6 @@
 #import "UMTRewardedVideo.h"
 #import "UMTAdManager+Banner.h"
 #import "UMTBanner.h"
-#import "UbiddingAdSdkDaq.pbobjc.h"
-#import "UbiddingConfig.pbobjc.h"
-#import "UbiddingMaterial.pbobjc.h"
 
 FOUNDATION_EXPORT double UBiddingAdSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char UBiddingAdSDKVersionString[];
