@@ -33,9 +33,9 @@ typedef NS_ENUM(NSInteger, UMTAdShowStatus) {
 
 @property (nonatomic, copy, readonly) NSString *requestId;
 
-@property (nonatomic, copy, readonly) NSString *slotId;
+@property (nonatomic, copy) NSString *slotId;
 
-@property (nonatomic, assign, readonly) UMTAdType adType;
+@property (nonatomic, assign) UMTAdType adType;
 
 @property (nonatomic, assign, readonly) UMTAdShowStatus showStatus;
 
