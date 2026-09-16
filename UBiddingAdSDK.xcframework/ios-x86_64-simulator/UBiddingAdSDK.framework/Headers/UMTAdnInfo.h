@@ -17,9 +17,6 @@ extern NSString *const UMTAdnExtraParam_PlatformName;
 ///  adn 扩展参数 子平台广告位,
 ///  仅支持 UBiXAdx
 extern NSString *const UMTAdnExtraParam_PlatformSlotId;
-///  adn 扩展参数 广告位,
-///  仅支持 UBiXAdx
-extern NSString *const UMTAdnExtraParam_SlotId;
 
 
 @interface UMTAdnInfo : UMTInterfaceBaseObject
